@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfAppBuoi10_21082023.Window8"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppBuoi10_21082023"
+        mc:Ignorable="d"
+        Title="Window8" Height="450" Width="800">
+    <StackPanel Margin="10" VerticalAlignment="Center">
+        <DockPanel VerticalAlignment="Center" Margin="10">
+            <Label DockPanel.Dock="Left" FontWeight="Bold">R:</Label>
+            <TextBox Text="{Binding ElementName=sIColorR, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
+            <Slider Maximum="255" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" Name="sIColorR" ValueChanged="ColorSlider_ValueChanged" />
+        </DockPanel>
+        <DockPanel VerticalAlignment="Center" Margin="10">
+            <Label DockPanel.Dock="Left" FontWeight="Bold">G:</Label>
+            <TextBox Text="{Binding ElementName=sIColorG, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
+            <Slider Maximum="255" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" Name="sIColorG" ValueChanged="ColorSlider_ValueChanged" />
+        </DockPanel>
+        <DockPanel VerticalAlignment="Center" Margin="10">
+            <Label DockPanel.Dock="Left" FontWeight="Bold">B:</Label>
+            <TextBox Text="{Binding ElementName=sIColorB, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
+            <Slider Maximum="255" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" Name="sIColorB" ValueChanged="ColorSlider_ValueChanged" />
+        </DockPanel>
+    </StackPanel>
+    
+</Window>

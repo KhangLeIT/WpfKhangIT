@@ -1,0 +1,31 @@
+﻿<Window x:Class="Wpf_BaiTap31072023.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_BaiTap31072023"
+        mc:Ignorable="d"
+        Title="Window4" Height="450" Width="800">
+    <!--Khai báo sử dụng Toolbar-->
+    <ToolBar>
+        <!--Khai báo nút bấm kích hoạt lệnh tô đậm đoạn chữ được chọn trong
+RichTextBox-->
+        <ToggleButton MinWidth="40"
+Command="EditingCommands.ToggleBold"
+CommandTarget="{Binding ElementName=XAMLRichBox}"
+TextBlock.FontWeight="Bold">B</ToggleButton>
+        <!--Khai báo nút bấm kích hoạt lệnh in nghiêng đoạn chữ được chọn trong
+RichTextBox-->
+        <ToggleButton MinWidth="40"
+Command="EditingCommands.ToggleItalic"
+CommandTarget="{Binding ElementName=XAMLRichBox}"
+TextBlock.FontStyle="Italic">I</ToggleButton>
+        <!--Khai báo nút bấm kích hoạt lệnh gạch chân đoạn chữ được chọn trong
+RichTextBox-->
+        <ToggleButton MinWidth="40"
+Command="EditingCommands.ToggleUnderline"
+CommandTarget="{Binding ElementName=XAMLRichBox}">
+            <TextBlock TextDecorations="Underline">U</TextBlock>
+        </ToggleButton>
+    </ToolBar>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="Wpf_07082023.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_07082023"
+        mc:Ignorable="d"
+        Title="Window3" Height="500" Width="800">
+    <DockPanel>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Command="Cut" ToolTip="Cut selection to Windows Clipboard.">
+                    <Image Source="/images/cut.jpg" Width="40" Height="40"/>
+                </Button>
+                <Button Command="Copy" ToolTip="Copy selection to Windows Clipboard.">
+                    <Image Source="/images/copy.jpg" Width="40" Height="40"/>
+                </Button>
+                <Button Command="Paste" ToolTip="Paste from Windows Clipboard.">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/images/past.jpg" Width="40" Height="40"/>
+                        <TextBlock Margin="3,0,0,0">Paste</TextBlock>
+                    </StackPanel>
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+        <TextBox AcceptsReturn="True" />
+    </DockPanel>
+
+</Window>

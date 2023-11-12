@@ -1,0 +1,47 @@
+﻿<Window x:Class="Wpf_07082023.Window7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_07082023"
+        mc:Ignorable="d"
+        Title="Window7" Height="450" Width="800">
+    <Menu>
+        <MenuItem Header="_Exit">
+        <MenuItem Header="_Cut" Command="Cut">
+            <MenuItem.Icon>
+                <Image Source="/images/cut.jpg" Width="10" Height="10"/>
+            </MenuItem.Icon>
+        </MenuItem>
+
+        <MenuItem Header="_Copy" Command="Copy">
+            <MenuItem.Icon>
+                <Image Source="/images/copy.jpg" Width="10" Height="10"/>
+            </MenuItem.Icon>
+        </MenuItem>
+
+        <MenuItem Header="_Paste" Command="Paste">
+                <MenuItem.Icon>
+                    <Image Source="/images/past.jpg" Width="10" Height="10"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </MenuItem>
+        <MenuItem Header="_Debug" >
+            <MenuItem Header="Enable Debugging" IsCheckable="True" />
+        </MenuItem>
+
+        <MenuItem Header="_File">
+            <MenuItem Header="_New..." />
+            <Separator />
+            <MenuItem Header="_Open..." />
+            <Separator />
+            <MenuItem Header="_Save..." />
+            <MenuItem Header="_Save As..." />
+            <Separator />
+            <MenuItem Header="_Exit..." />
+
+            <Separator />
+            
+        </MenuItem>
+    </Menu>
+</Window>

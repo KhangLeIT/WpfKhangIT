@@ -1,0 +1,9 @@
+﻿<Application x:Class="Wpf_BaiTap31072023.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Wpf_BaiTap31072023"
+             StartupUri="Window6.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

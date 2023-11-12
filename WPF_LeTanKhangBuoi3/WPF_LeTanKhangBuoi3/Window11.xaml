@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPF_LeTanKhangBuoi3.Window11"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_LeTanKhangBuoi3"
+        mc:Ignorable="d"
+        Title="Window11" Height="450" Width="800">
+    <Grid>
+        <ListBox Margin="5,10,4.6,0.4" ItemsSource="{Binding}" HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding Item1}"/>
+                        <TextBlock Grid.Column="1" Text="{Binding Item2}"/>
+                        <TextBlock Grid.Column="2" Text="{Binding Item3}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+
+</Window>

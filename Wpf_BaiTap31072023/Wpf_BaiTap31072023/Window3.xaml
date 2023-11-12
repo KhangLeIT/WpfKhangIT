@@ -1,0 +1,69 @@
+﻿<Window x:Class="Wpf_BaiTap31072023.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_BaiTap31072023"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <StackPanel>
+        <!--Khai báo tạo lập Expander chứa danh mục đồ uống-->
+        <Expander FontFamily="Times New Roman" FontSize="14" FontStyle="Oblique"
+Header="Đồ uống" Background="#acbf43" >
+            <!---Khai báo ListBox chứa danh mục đồ uống-->
+            <ListBox >
+                <!--Khai báo các chỉ mục con trong danh mục đồ uống-->
+                <!--Mỗi mục con được trang trí bằng một biểu tượng đi kèm text-->
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="image/coffee.jpg" Height="20"></Image>
+                        <TextBlock VerticalAlignment="Center" Text="coffee"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="image/milk.jpg" Height="20"></Image>
+                        <TextBlock VerticalAlignment="Center" Text="tà tưa"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="image/icetea.jpg" Height="20"></Image>
+                        <TextBlock VerticalAlignment="Center" Text="Trà Đá"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+        </Expander>
+        <Expander FontFamily="Times New Roman" FontSize="14" FontStyle="Oblique" Header="Đồ ăn" Background="DarkOrange">
+            <ListBox>
+                <!--Khai báo các chỉ mục con trong danh mục đồ ăn-->
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="image/gau-bo-ngon.jpg" Height="20"/>
+                        <TextBlock VerticalAlignment="Center"><Run Text="Phở tái gàu"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="image/bunbogioheo.jpg" Height="20"/>
+                        <TextBlock VerticalAlignment="Center"><Run Text="Bún bò giò heo"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="image/icetea.jpg" Height="20"/>
+                        <TextBlock VerticalAlignment="Center"><Run Text="Bánh cuốn tôm nõn"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="image/milk.jpg" Height="20"/>
+                        <TextBlock VerticalAlignment="Center"><Run Text="Bánh đa cua"/></TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+        </Expander>
+        <!--Khai báo Expander chứa danh mục đồ ăn-->
+    </StackPanel>
+
+</Window>

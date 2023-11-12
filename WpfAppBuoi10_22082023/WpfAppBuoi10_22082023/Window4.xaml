@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfAppBuoi10_22082023.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppBuoi10_22082023"
+        mc:Ignorable="d"
+        Title="Window4" Height="450" Width="800">
+    <Canvas Height="335" Width="616" Background="AntiqueWhite">
+        <!-- Vẽ một hình tam giác tô màu Blue và không có đường viền -->
+        <Polygon Points="10,110 60,10 110,110" Fill="Blue" />
+        <!-- Vẽ một hình tam giác tô màu Blue, có đường viền màu đen dày 4 pixel
+Thuộc tính Canvas.Top dùng để dịch tam giác xuống 150 pixels so với
+đỉnh Canvas. -->
+        <Polygon Points="10,110 60,10 110,110"
+                Fill="Blue"
+                Stroke="Black" StrokeThickness="4"
+                Canvas.Top="150" />
+        <!-- Vẽ một hình tam giác tô màu Blue và không có đường viền.
+Thuộc tính Canvas.Left dùng để dịch tam giác sang phải 150 pixels. -->
+        <Polygon Points="10,110 110,110 110,10" Fill="Blue" Canvas.Left="150" />
+        <!-- Vẽ một hình tam giác có đường viền màu đen không tô màu.
+vị trí của tam giác cách canh trái và đỉnh của Canvas 150 pixel.-->
+        <Polygon Points="10,110 110,110 110,10" Stroke="Black" StrokeThickness="4"  Canvas.Left="150" Canvas.Top="150" />
+        <!-- Vẽ một hình lục giác màu nền là Gold,đường viền màu đen.-->
+        <Polygon Name="hexagon" 
+                 Stroke="Blue" StrokeThickness="2.0" 
+                 Fill="Gold" Points="176,30 302.44,103 302.44,249 176,322 49.5603,249 49.5603,103"
+                 Canvas.Left="280" 
+                 Canvas.Top="0" />
+    </Canvas>
+</Window>

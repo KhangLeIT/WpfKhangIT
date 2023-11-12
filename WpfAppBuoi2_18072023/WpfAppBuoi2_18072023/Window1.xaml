@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfAppBuoi2_18072023.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppBuoi2_18072023"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Content="hello layout demo"
+               FontSize="15" FontWeight="Bold"
+               Foreground="Blue"
+               Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" />
+        <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Horizontal" >
+            <Label Content="Name" FontSize="15" FontWeight="Bold"/>
+            <TextBox Name="txtName" Text=" name ne" VerticalAlignment="Center"
+                     >
+            </TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal" >
+            <Label Content="City" FontSize="15" FontWeight="Bold"/>
+            <TextBox Name="txtCity" Text=" City ne" VerticalAlignment="Center"
+                     >
+            </TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="3" Orientation="Horizontal" >
+            <Label Content="State" FontSize="15" FontWeight="Bold"/>
+            <TextBox Name="txtState" Text=" State ne" VerticalAlignment="Center"
+                     >
+            </TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="4" Orientation="Horizontal" >
+            <Label Content="Country" FontSize="15" FontWeight="Bold"/>
+            <TextBox Name="txtCountry" Text=" Country ne" VerticalAlignment="Center"
+                     >
+            </TextBox>
+        </StackPanel>
+
+    </Grid>
+</Window>

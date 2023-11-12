@@ -1,0 +1,56 @@
+﻿<Window x:Class="Wpf_BaiTap31072023.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_BaiTap31072023"
+        mc:Ignorable="d"
+        Title="Window6" Height="450" Width="800">
+    <StackPanel>
+        
+        <!--Khai báo tạo lập một hộp danh mục với các thuộc tính về căn lề, chiều rộng, tên
+gọi,...-->
+        <ListBox Margin="10,10,0,13" Width="280" Name="listBox1" HorizontalAlignment="Left"
+VerticalAlignment="Top">
+            <!--Khai báo tạo lập một chỉ mục con trong hộp danh mục với thuộc tính màu nền-->
+            <ListBoxItem Background="Beige">
+                <!--Lồng vào chỉ mục này một StackPanel để có thể chứa nhiều hơn 1 phần tử UI
+con theo chiều ngang-->
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox x:Name="chkCoffee" Checked="HandleChecked"
+Unchecked="HandleUnchecked"></CheckBox>
+                    <!--Khai báo tạo lập một ảnh đồ uống ở đầu mỗi chỉ mục-->
+                    <Image Width="50" Height="50" Source="image/coffee.jpg"></Image>
+                    <!--Khai báo tạo lập một dòng chữ chỉ tên đồ uống-->
+                    <TextBlock Margin="5" VerticalAlignment="Center" FontFamily="Times New Roman"
+FontStyle="Italic" FontSize="18">Coffee</TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+            <!--Khai báo chỉ mục 2 tương tự như trên-->
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox x:Name="chkKiwiJuice" Checked="HandleChecked"
+Unchecked="HandleUnchecked"></CheckBox>
+                    <Image Width="50" Height="50" Source="image/icetea.jpg"></Image>
+                    <TextBlock Margin="5" VerticalAlignment="Center" FontFamily="Times New Roman"
+FontStyle="Italic" FontSize="18">Nước kiwi ép</TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+            <!--Khai báo chỉ mục 3 tương tự như trên-->
+            <ListBoxItem Background="Beige">
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox x:Name="chkTaTua" Checked="HandleChecked"
+Unchecked="HandleUnchecked"></CheckBox>
+                    <Image Width="50" Height="50" Source="image/milk.jpg"></Image>
+                    <TextBlock Margin="5" VerticalAlignment="Center" FontFamily="Times New Roman"
+FontStyle="Italic" FontSize="18">NTà Tưa</TextBlock>
+                </StackPanel>
+            </ListBoxItem>
+            <!--Khai báo chỉ mục 4 tương tự như trên-->
+            <ListBoxItem/>
+            <!--Khai báo chỉ mục 5 tương tự như trên-->
+        </ListBox>
+        <!--Khai báo nút bấm kích hoạt hiển thị đồ uống được chọn -->
+        <Button Click="DislayCustomerChoices" Width="70">Gọi đồ uống</Button>
+    </StackPanel>
+</Window>

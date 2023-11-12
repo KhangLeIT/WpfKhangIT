@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfAppBuoi10_21082023.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppBuoi10_21082023"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <TabControl>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Imgs/Pure_blue.png" Width="20" Height="20" />
+                            <TextBlock Text="Blue" Foreground="Blue" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    
+                    <Label Content="Content goes here..." />
+                </TabItem>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Imgs/light_red.png" Height="20" Width="20"/>
+                            <TextBlock Text="Red" Foreground="Red" />
+                        </StackPanel>
+                    </TabItem.Header>
+                </TabItem>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Imgs/chroma_green.png" Width="20" Height="20" />
+                            <TextBlock Text="Green" Foreground="Green" />
+                        </StackPanel>
+                    </TabItem.Header>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Grid>
+</Window>
